@@ -1,0 +1,33 @@
+ #include<stdio.h>
+ int main()
+ {
+ int a[10],n,i,j,flag=0,arr[10],t=0;
+     printf("\nEnter number for array : \n");
+     scanf("%d",&n);
+     printf("\nEnter %d Numbers in Array:\n\n",n);
+     for(i=0;i<n;i++)
+          scanf("%d",&a[i]);
+     for(i=n;i>0;i--)
+     {
+          flag=0;
+          for(j=2;j<a[i];j++)
+          {
+               if(a[i]%j==0)
+               {
+                    flag=1;
+                    break;
+               }
+          }
+          if(flag==0 && a[i]!=1)
+          {
+               arr[t]=a[i];
+               t++;
+          }
+     }
+     printf("\nPrime Numbers in Above Array:\n\n");
+     for(i=0;i<t;i++)
+     {
+          printf(" %d ",arr[i]);
+     }
+     return 0;
+}
