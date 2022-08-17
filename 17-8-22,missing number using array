@@ -1,0 +1,19 @@
+int main()
+{
+	int n;
+	int i;
+	int a[40];
+	int sum=0;
+	int total;
+	printf("enter no.of elements for array: ");
+	scanf("%d",&n);
+	printf("enter all numbers: \n");
+	for(i=0;i<n;i++){
+		scanf("%d",&a[i]);
+		sum = sum+a[i];
+	}
+	n++;
+	total=(n*(n+1)/2);
+	printf("the missing nmuber is %d",total-sum);
+	return 0;
+}
