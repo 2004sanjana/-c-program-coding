@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	 char str[30];
+	 int i,c=0;
+	printf("enter the sentence: ");
+	gets(str);
+	for(i=0;str[i]!='\0';i++)
+	{
+		if(str[i]==' ')
+		{
+			c++;
+		}
+	}
+		printf("\n no.of words = %d",c+1);
+		return 0;		
+}
