@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{	 
+	int i,row,col,n=5;
+    printf("\n");
+    for(row=1;row<=5;row++){
+    for(col=1;col<=5;col++){
+    printf("%4d",row*col);
+    }
+    printf("\n");
+}
+    return 0;
+}
