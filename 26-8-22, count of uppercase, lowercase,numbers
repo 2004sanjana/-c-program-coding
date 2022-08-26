@@ -1,0 +1,19 @@
+
+int main()
+{
+	char str[100];
+		gets(str);
+	int i,c1=0,c2=0,c3=0;
+	for(i=0;str[i]!='\0';i++)
+	{
+		if(str[i]>='A' && str[i]<='Z')
+		c1++;
+		else if(str[i]>='a' && str[i]<='z')
+		c2++;
+		else if(str[i]>='0' && str[i]<='9')
+		c3++;
+	}
+	printf("\nCount of uppercase charactors: %d \nCount of lowercase charactors: %d \nCount of numbers: %d",c1,c2,c3);
+	return 0;
+	
+}
