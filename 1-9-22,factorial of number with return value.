@@ -1,0 +1,25 @@
+#include<stdio.h>
+void factorial(int);  
+  
+int main()  
+{  
+    int num;  
+  
+    printf("Enter a number: ");  
+    scanf("%d", &num);  
+  
+    factorial(num);  
+  
+    return 0;  
+}  
+  
+void factorial(int num)  
+{  
+    int count, fact = 1;  
+        for(count = 1; count <= num; count++)  
+        {  
+            fact = fact * count;  
+        }  
+  
+        printf(" %d ",  fact);  
+}
